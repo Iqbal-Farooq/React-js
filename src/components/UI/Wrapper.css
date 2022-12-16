@@ -1,0 +1,10 @@
+.ex {
+
+    display: grid;
+    color: aliceblue;
+    grid: 70px 70px /200px;
+    background-color: darkgreen;
+    border: 1px solid;
+    width: 200px;
+
+}

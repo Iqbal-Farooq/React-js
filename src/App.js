@@ -1,6 +1,7 @@
 
 
 import ExpenseItem  from "./components/Expenses/ExpenseItem";
+
 const  App=()=> {
   const expenses=[{id:'i1',title:"car-insurance",amount :'Rs-1200' ,date:new Date(2023,2,12),LocationOfExpenditure:"J&K"},
   {id:'j2',title:"Room-Rent",amount :'Rs-4000' ,date:new Date(2022,6,2),LocationOfExpenditure:"UP"},
@@ -17,6 +18,7 @@ const  App=()=> {
 
       )
       }
+     
     
 
      </div>

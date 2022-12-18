@@ -1,5 +1,5 @@
 
-
+import Input from "./components/Expenses/Input";
 import ExpenseItem  from "./components/Expenses/ExpenseItem";
 
 const  App=()=> {
@@ -9,6 +9,8 @@ const  App=()=> {
 {id:'l4',title:"Sports",amount :'Rs-1500' ,date:new Date(2023,2,5),LocationOfExpenditure:"SRX"},]
 
   return (
+     <>
+       <Input />
      <div>
      {
           expenses.map((i)=>{ 
@@ -22,6 +24,9 @@ const  App=()=> {
     
 
      </div>
+    
+
+     </>
 
 
 )

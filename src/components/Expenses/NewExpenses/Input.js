@@ -58,7 +58,7 @@ function Input(props){
                     <input type='number' id="amount" value={enteredAmount} placeholder="expense-amount" onChange={amountChanged}/><br /><br />
                     <input type='date'  id="date" value={entereDate} onChange={dateChanged}/> <br /><br />
                     {/* <button onClick={print} >Submit</button><br /><br /> */}
-                     <button >Submit</button><br /><br />
+                    <button onClick={props.onCancel}>Cancel</button>  <button >Submit</button><br /><br />
                     </form>
 
                                

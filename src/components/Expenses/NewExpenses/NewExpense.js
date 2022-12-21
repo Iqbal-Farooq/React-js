@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Input from './Input';
 
 const NewExpense=(props)=>{
+    
+    const[Edit,setEdit]=useState(false);
 
     const onSaveDataHandler=(enteredExpenseData)=>{
 const expenseData={
@@ -11,8 +13,17 @@ const expenseData={
 props.onAddExpense(expenseData);
 
 }
+const EditHandler =()=>{
+    setEdit(true)
+}
+const  StopEdit=()=>{
+    setEdit(false)
+}
     return (
-        <Input onSaveData={onSaveDataHandler}/>
+        <>
+        {(!Edit &&<button onClick={EditHandler}>Add New Expense</button> )} 
+      {Edit &&<Input onSaveData={onSaveDataHandler} onCancel={StopEdit} />}
+        </>
     )
 }
 export  default NewExpense;
